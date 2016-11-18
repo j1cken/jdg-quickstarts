@@ -83,7 +83,8 @@
 
         <dependency>
             <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-cdi</artifactId>
+            <artifactId>infinispan-cdi-common</artifactId>
+            <version>6.4.1.Final-redhat-1</version>
         </dependency>
 
         <dependency>
@@ -92,10 +93,16 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.infinispan</groupId>
+            <artifactId>infinispan-cachestore-leveldb</artifactId>
+            <version>6.4.1.Final-redhat-1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
-        <!-- Set the name of the war, used as the context root when the app 
+        <!-- Set the name of the war, used as the context root when the app
             is deployed -->
         <finalName>${project.artifactId}</finalName>
         <plugins>
@@ -140,4 +147,3 @@
         </profile>
     </profiles>
 </project>
-
